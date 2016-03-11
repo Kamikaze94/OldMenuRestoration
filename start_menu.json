@@ -1,0 +1,187 @@
+{
+  
+      "1": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "play_online_game chk_dlc_content_updated",
+        "callback_disabled": "show_game_is_installing_menu",
+        "enabled_callback": "is_installed",
+        "help_id": "menu_crimenet_help",
+        "name": "crimenet",
+        "next_node": "crimenet",
+        "sign_in": true,
+        "text_id": "menu_crimenet"
+      },
+      "2": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "play_single_player chk_dlc_content_updated",
+        "callback_disabled": "show_game_is_installing_menu",
+        "enabled_callback": "is_installed",
+        "help_id": "menu_crimenet_offline_help",
+        "name": "crimenet_offline",
+        "next_node": "crimenet_single_player",
+        "sign_in": false,
+        "text_id": "menu_crimenet_offline"
+      },
+      "3": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "inventory1",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "4": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_player_inventory_help",
+        "icon": "guis/textures/pd2/blackmarket/inv_newdrop",
+        "icon_visible_callback": "got_new_lootdrop",
+        "name": "inventory",
+        "next_node": "inventory",
+        "text_id": "menu_player_inventory"
+      },
+      "5": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_steam_inventory_help",
+        "icon": "guis/textures/pd2/blackmarket/inv_newdrop",
+        "icon_visible_callback": "got_new_steam_lootdrop",
+        "name": "steam_inventory",
+        "next_node": "steam_inventory",
+        "text_id": "menu_steam_inventory",
+        "visible_callback": "is_win32"
+      },
+      "6": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "chk_dlc_content_updated",
+        "help_id": "menu_infamytree_help",
+        "name": "infamytree",
+        "next_node": "infamytree",
+        "text_id": "menu_infamytree"
+      },
+      "7": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "become_infamous",
+        "help_id": "menu_become_infamous_help",
+        "name": "become_infamous",
+        "text_id": "menu_become_infamous",
+        "visible_callback": "can_become_infamous"
+      },
+      "8": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "play_safehouse",
+        "help_id": "menu_safehouse_help",
+        "name": "safehouse",
+        "text_id": "menu_safehouse"
+      },
+      "9": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "divider_test2",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "10": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_content_updates_help",
+        "icon": "guis/textures/pd2/crimenet_legend_payclass",
+        "icon_visible_callback": "got_new_content_update",
+        "name": "content_updates_pc",
+        "next_node": "content_updates_pc",
+        "text_id": "menu_content_updates",
+        "visible_callback": "is_not_nextgen"
+      },
+      "11": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_visit_gamehub",
+        "help_id": "menu_visit_gamehub_help",
+        "name": "gamehub",
+        "text_id": "menu_visit_gamehub",
+        "visible_callback": "is_win32"
+      },
+      "12": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_visit_fbi_files",
+        "help_id": "menu_visit_fbi_files_help",
+        "name": "fbi_files",
+        "text_id": "menu_visit_fbi_files",
+        "visible_callback": "is_win32"
+      },
+      "13": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "divider_infamy",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "14": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_options_help",
+        "name": "options",
+        "next_node": "options",
+        "text_id": "menu_options"
+      },
+      "15": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_ingame_manual_help",
+        "name": "ingame_manual",
+        "next_node": "ingame_manual",
+        "text_id": "menu_ingame_manual",
+        "visible_callback": "is_ps3 is_na"
+      },
+      "16": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_credits_help",
+        "name": "credits",
+        "next_node": "credits",
+        "text_id": "menu_credits"
+      },
+      "17": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "divider_test2",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "18": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_account_picker",
+        "help_id": "menu_account_picker_help",
+        "name": "account_picker",
+        "text_id": "menu_account_picker",
+        "visible_callback": "is_xb1"
+      },
+      "19": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_menu_option_help",
+        "help_id": "menu_option_help_help",
+        "name": "option_help",
+        "text_id": "menu_option_help",
+        "visible_callback": "is_xb1"
+      },
+      "20": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "quit_game",
+        "help_id": "menu_quit_help",
+        "name": "quit",
+        "text_id": "menu_quit",
+        "visible_callback": "is_win32"
+      }
+}

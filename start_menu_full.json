@@ -1,0 +1,535 @@
+{
+      "1": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_pc",
+        "help_id": "menu_dlc_buy_help",
+        "name": "dlc_buy_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game not_has_all_dlcs"
+      },
+      "2": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_ps3",
+        "help_id": "menu_dlc_buy_help",
+        "name": "dlc_buy_ps3",
+        "sign_in": true,
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy",
+        "trial_buy": true,
+        "visible_callback": "is_ps3 has_full_game not_has_all_dlcs"
+      },
+      "3": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "trial_buy",
+        "help_id": "menu_trial_buy_help",
+        "name": "trial_buy",
+        "sign_in": true,
+        "text_id": "menu_trial_buy",
+        "trial_buy": true,
+        "visible_callback": "is_ps3 is_trial"
+      },
+      "4": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_trial_info_help",
+        "name": "trial_info",
+        "next_node": "trial_info",
+        "text_id": "menu_trial_info",
+        "visible_callback": "is_trial"
+      },
+      "5": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_pal_pc",
+        "help_id": "menu_dlc_buy_pal_help",
+        "name": "dlc_buy_pal_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_pal",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_pal"
+      },
+      "6": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_peta_pc",
+        "help_id": "menu_dlc_buy_peta_help",
+        "name": "dlc_buy_peta_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_peta",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_peta"
+      },
+      "7": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_berry_pc",
+        "help_id": "menu_dlc_buy_berry_help",
+        "name": "dlc_buy_berry_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_berry",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_berry"
+      },
+      "8": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_steel_pc",
+        "help_id": "menu_dlc_buy_steel_help",
+        "name": "dlc_buy_steel_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_steel",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_steel"
+      },
+      "9": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_dragon_pc",
+        "help_id": "menu_dlc_buy_dragon_help",
+        "name": "dlc_buy_dragon_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_dragon",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_dragon"
+      },
+      "10": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_turtles_pc",
+        "help_id": "menu_dlc_buy_turtles_help",
+        "name": "dlc_buy_turtles_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_turtles",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_turtles"
+      },
+      "11": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_character_pack_sokol_pc",
+        "help_id": "menu_dlc_buy_character_pack_sokol_help",
+        "name": "dlc_buy_character_pack_sokol_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_character_pack_sokol",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_character_pack_sokol"
+      },
+      "12": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_kenaz_pc",
+        "help_id": "menu_dlc_buy_kenaz_help",
+        "name": "dlc_buy_kenaz_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_kenaz",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_kenaz"
+      },
+      "13": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_arena_pc",
+        "help_id": "menu_dlc_buy_arena_help",
+        "name": "dlc_buy_arena_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_arena",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_arena"
+      },
+      "14": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_west_pc",
+        "help_id": "menu_dlc_buy_west_help",
+        "name": "dlc_buy_west_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_west",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_west"
+      },
+      "15": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_bbq_pc",
+        "help_id": "menu_dlc_buy_bbq_help",
+        "name": "dlc_buy_bbq_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_bbq",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_bbq"
+      },
+      "16": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_overkill_pack_pc",
+        "help_id": "menu_dlc_buy_overkill_pack_help",
+        "name": "dlc_buy_overkill_pack_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_overkill_pack",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_overkill_pack"
+      },
+      "17": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_akm4_pack_pc",
+        "help_id": "menu_dlc_buy_akm4_pack_help",
+        "name": "dlc_buy_akm4_pack_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_akm4_pack",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_akm4_pack"
+      },
+      "18": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_character_pack_dragan_pc",
+        "help_id": "menu_dlc_buy_character_pack_dragan_help",
+        "name": "dlc_buy_character_pack_dragan_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_character_pack_dragan",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_character_pack_dragan"
+      },
+      "19": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_the_bomb_pc",
+        "help_id": "menu_dlc_buy_the_bomb_help",
+        "name": "dlc_buy_the_bomb_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_the_bomb",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_the_bomb"
+      },
+      "20": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_character_pack_clover_pc",
+        "help_id": "menu_dlc_buy_character_pack_clover_help",
+        "name": "dlc_buy_character_pack_clover_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_character_pack_clover",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_character_pack_clover"
+      },
+      "21": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_hope_diamond_pc",
+        "help_id": "menu_dlc_buy_hope_diamond_help",
+        "name": "dlc_buy_hope_diamond_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_hope_diamond",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_hope_diamond"
+      },
+      "22": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_gage_pack_historical_pc",
+        "help_id": "menu_dlc_buy_gage_pack_historical_help",
+        "name": "dlc_buy_gage_pack_historical_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_gage_pack_historical",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_gage_pack_historical"
+      },
+      "23": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_hl_miami_pc",
+        "help_id": "menu_dlc_buy_hl_miami_help",
+        "name": "dlc_buy_hl_miami_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_hl_miami",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_hl_miami"
+      },
+      "24": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_gage_pack_assault_pc",
+        "help_id": "menu_dlc_buy_gage_pack_assault_help",
+        "name": "dlc_buy_gage_pack_assault_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_gage_pack_assault",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_gage_pack_assault"
+      },
+      "25": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_gage_pack_shotgun_pc",
+        "help_id": "menu_dlc_buy_gage_pack_shotgun_help",
+        "name": "dlc_buy_gage_pack_shotgun_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_gage_pack_shotgun",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_gage_pack_shotgun"
+      },
+      "26": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_big_bank_pc",
+        "help_id": "menu_dlc_buy_big_bank_help",
+        "name": "dlc_buy_big_bank_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_big_bank",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_big_bank"
+      },
+      "27": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_gage_pack_snp_pc",
+        "help_id": "menu_dlc_buy_gage_pack_snp_help",
+        "name": "dlc_buy_gage_pack_snp_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_gage_pack_snp",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_gage_pack_snp"
+      },
+      "28": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_gage_pack_jobs_pc",
+        "help_id": "menu_dlc_buy_gage_pack_jobs_help",
+        "name": "dlc_buy_gage_pack_jobs_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_gage_pack_jobs",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_gage_pack_jobs"
+      },
+      "29": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_gage_pack_lmg_pc",
+        "help_id": "menu_dlc_buy_gage_pack_lmg_help",
+        "name": "dlc_buy_gage_pack_lmg_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_gage_pack_lmg",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_gage_pack_lmg"
+      },
+      "30": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_gage_pack_pc",
+        "help_id": "menu_dlc_buy_gage_pack_help",
+        "name": "dlc_buy_gage_pack_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_gage_pack",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_gage_pack"
+      },
+      "31": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "dlc_buy_armadillo_pc",
+        "help_id": "menu_dlc_buy_armadillo_help",
+        "name": "dlc_buy_armadillo_pc",
+        "stencil_image": "bg_dlc",
+        "text_id": "menu_dlc_buy_armadillo",
+        "trial_buy": true,
+        "visible_callback": "is_win32 has_full_game is_overlay_enabled visible_callback_armored_transport"
+      },
+      "32": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "divider_dlc_buy_pc",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider",
+        "visible_callback": "is_win32 has_full_game not_has_all_dlcs"
+      },
+      "33": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "play_online_game chk_dlc_content_updated",
+        "callback_disabled": "show_game_is_installing_menu",
+        "enabled_callback": "is_installed",
+        "help_id": "menu_crimenet_help",
+        "name": "crimenet",
+        "next_node": "crimenet",
+        "sign_in": true,
+        "text_id": "menu_crimenet"
+      },
+      "34": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "play_single_player chk_dlc_content_updated",
+        "callback_disabled": "show_game_is_installing_menu",
+        "enabled_callback": "is_installed",
+        "help_id": "menu_crimenet_offline_help",
+        "name": "crimenet_offline",
+        "next_node": "crimenet_single_player",
+        "sign_in": false,
+        "text_id": "menu_crimenet_offline"
+      },
+      "35": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "inventory1",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "36": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_player_inventory_help",
+        "icon": "guis/textures/pd2/blackmarket/inv_newdrop",
+        "icon_visible_callback": "got_new_lootdrop",
+        "name": "inventory",
+        "next_node": "inventory",
+        "text_id": "menu_player_inventory"
+      },
+      "37": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_steam_inventory_help",
+        "icon": "guis/textures/pd2/blackmarket/inv_newdrop",
+        "icon_visible_callback": "got_new_steam_lootdrop",
+        "name": "steam_inventory",
+        "next_node": "steam_inventory",
+        "text_id": "menu_steam_inventory",
+        "visible_callback": "is_win32"
+      },
+      "38": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "chk_dlc_content_updated",
+        "help_id": "menu_infamytree_help",
+        "name": "infamytree",
+        "next_node": "infamytree",
+        "text_id": "menu_infamytree"
+      },
+      "39": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "become_infamous",
+        "help_id": "menu_become_infamous_help",
+        "name": "become_infamous",
+        "text_id": "menu_become_infamous",
+        "visible_callback": "can_become_infamous"
+      },
+      "40": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "play_safehouse",
+        "help_id": "menu_safehouse_help",
+        "name": "safehouse",
+        "text_id": "menu_safehouse"
+      },
+      "41": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "divider_test2",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "42": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_content_updates_help",
+        "icon": "guis/textures/pd2/crimenet_legend_payclass",
+        "icon_visible_callback": "got_new_content_update",
+        "name": "content_updates_pc",
+        "next_node": "content_updates_pc",
+        "text_id": "menu_content_updates",
+        "visible_callback": "is_not_nextgen"
+      },
+      "43": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_visit_gamehub",
+        "help_id": "menu_visit_gamehub_help",
+        "name": "gamehub",
+        "text_id": "menu_visit_gamehub",
+        "visible_callback": "is_win32"
+      },
+      "44": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_visit_fbi_files",
+        "help_id": "menu_visit_fbi_files_help",
+        "name": "fbi_files",
+        "text_id": "menu_visit_fbi_files",
+        "visible_callback": "is_win32"
+      },
+      "45": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "divider_infamy",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "46": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_options_help",
+        "name": "options",
+        "next_node": "options",
+        "text_id": "menu_options"
+      },
+      "47": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_ingame_manual_help",
+        "name": "ingame_manual",
+        "next_node": "ingame_manual",
+        "text_id": "menu_ingame_manual",
+        "visible_callback": "is_ps3 is_na"
+      },
+      "48": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "help_id": "menu_credits_help",
+        "name": "credits",
+        "next_node": "credits",
+        "text_id": "menu_credits"
+      },
+      "49": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "name": "divider_test2",
+        "no_text": true,
+        "size": 8.0,
+        "type": "MenuItemDivider"
+      },
+      "50": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_account_picker",
+        "help_id": "menu_account_picker_help",
+        "name": "account_picker",
+        "text_id": "menu_account_picker",
+        "visible_callback": "is_xb1"
+      },
+      "51": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "on_menu_option_help",
+        "help_id": "menu_option_help_help",
+        "name": "option_help",
+        "text_id": "menu_option_help",
+        "visible_callback": "is_xb1"
+      },
+      "52": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
+        "_meta": "item",
+        "callback": "quit_game",
+        "help_id": "menu_quit_help",
+        "name": "quit",
+        "text_id": "menu_quit",
+        "visible_callback": "is_win32"
+      }
+}
